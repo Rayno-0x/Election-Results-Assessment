@@ -1,0 +1,23 @@
+<h1>Question 2: Summed LGA Results</h1>
+<form method="POST">
+  <select name="lga_id">
+    {% for lga in lgas %}
+    <option value="{{ lga.lga_id }}">{{ lga.lga_name }}</option>
+    {% endfor %}
+  </select>
+  <button type="submit">Get Total</button>
+</form>
+{% if results %}
+<table border="1">
+  <tr>
+    <th>Party</th>
+    <th>Total Score</th>
+  </tr>
+  {% for res in results %}
+  <tr>
+    <td>{{ res[0] }}</td>
+    <td>{{ res[1] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}

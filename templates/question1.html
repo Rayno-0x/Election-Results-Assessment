@@ -1,0 +1,14 @@
+<h1>Question 1: Polling Unit 8 Results</h1>
+<table border="1">
+  <tr>
+    <th>Party</th>
+    <th>Score</th>
+  </tr>
+  {% for res in results %}
+  <tr>
+    <td>{{ res.party_abbreviation }}</td>
+    <td>{{ res.party_score }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<br /><a href="/lga">Go to Question 2</a> | <a href="/add">Go to Question 3</a>

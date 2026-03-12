@@ -1,4 +1,5 @@
 Election Results Web Application (Bincom Assessment)
+
 This is a Python-based web application developed as part of the Bincom Dev Center recruitment process. The application interacts with a database of the 2011 Nigerian election results to display and manage polling data.
 
 Features
